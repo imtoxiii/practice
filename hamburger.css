@@ -1,0 +1,26 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: #1b74e4;
+}
+#search{
+    color: white;
+    background-color: black;
+}
+.login{
+    background-color: aqua;
+}
+button:hover{
+    background-color: green;
+}
+h1:hover
+{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;}
+    .login:nth-last-of-type(1){
+        background-color: yellow;
+    }
+    h1::first-letter{
+        color: chartreuse;
+    }

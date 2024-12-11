@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#box{
+    position: relative;
+    height:700px;
+    width:340px;
+    margin: 20px auto;
+    
+}
+
+#head h1{
+    font-family: 'Kalam', cursive;
+    font-size: 65px;
+    color: black;
+    padding-top: 70px;
+    text-align: center;
+}
+
+#head h3{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-weight:650;
+    font-size: 14px;
+    
+}
+
+.input input{
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+.input span{
+    position: absolute;
+    right: 15px;
+    top: 47%;
+    font-size: 14px;
+    color: gray;
+}
+
+.button{
+    padding: 10px 23px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 14px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.link {
+    margin-top: 40px;
+    margin-left:80px;
+    font-size: 14px;
+    color: gray;
+}
+
+.link a {
+    color: black;
+    font-weight: 500;
+}
+
+.pass{
+    margin-left: 87px;
+
+}
+
+.para1{
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+}

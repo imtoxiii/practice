@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+#profile{
+    height: 440px;
+    width: 600px;
+    margin: 50px auto;
+}
+
+#profile1{
+    height: 85%;
+    padding: 15px 25px;
+    border-radius:15px;
+    border: 2px solid rgb(195, 194, 194);
+    
+
+}
+
+#profile h1{
+    font-weight: 450;
+    font-size: 30px;
+    
+}
+
+.para{
+    font-size:20px;
+    color: gray;
+    font-style: 200;
+}
+#box{
+    display: flex;
+}
+
+.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-image: url(https://i.pinimg.com/736x/5b/fc/27/5bfc27586c4bf586215e60446f9b6f47.jpg);
+    background-size: cover;
+}
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+    background-image: url(https://i.pinimg.com/736x/cd/26/a7/cd26a75bdd48a6cdc774347def18cdfc.jpg);
+    background-size: cover;
+}
+
+.line{
+    background-color:rgb(195, 194, 194);
+    width: 600px;
+    height: 1px;
+    margin-left: -26px;
+}
+
+.para2{
+    color: #1B73E8;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}

