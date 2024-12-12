@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins';
+}
+
+#box {
+    position: relative;
+    width: 900px;
+    height: 250px;
+    background-color: red;
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/top-view-table-full-food_23-2149209253.jpg?t=st=1733989981~exp=1733993581~hmac=8e8e9642227017b4cddeaf357c1fced2bbf953fb473925c6e7508c2593d5f182&w=996);
+    background-position: cover;
+    margin: 20px auto;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+#heading h1 {
+    position: relative;
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 900;
+    padding-top: 35px;
+    color: white;
+    font-size: 55px;
+}
+
+#heading p {
+    position: relative;
+    margin-top: -30px;
+    color: white;
+}
+
+#search {
+    position: relative;
+    width: 600px;
+    height: 30px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 5px;
+    display: flex;
+    padding: 4px;
+}
+
+#place {
+    display: flex;
+    align-items: center;
+    width: 38%;
+}
+
+.loc {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined {
+    color: red;
+    font-size: 30px;
+}
+
+.dropdown-icon {
+    margin-left: 90px;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+
+#search1 {
+    display: flex;
+    align-items: center;
+}
+
+.search2 {
+    color: rgba(0, 0, 0, 0.637);
+
+
+}
+
+#search1 p{
+    margin-left: 23px;
+}
